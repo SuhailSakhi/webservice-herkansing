@@ -1,0 +1,158 @@
+body {
+    background-size: cover;
+    background-color: #e8e8c6;
+    background-image: url("/suhail-map-prg03/img/kaart_Rotterdam.jpg");
+    background-blend-mode: overlay;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    padding: 0.5vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: white;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(116, 160, 123);
+    font-weight: bold;
+    background-image: url("../suhail-map-prg03/img/boojman.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    text-align: center;
+    text-shadow: 4px 4px 20px #1d1d1d;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3vh;
+}
+
+.content-box{
+    border-radius: 5px;
+    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.content-holder{
+    padding-bottom: 5vw;
+}
+
+.meer{
+    background: #fdefbf;
+    color: #000000;
+    border: 0;
+    border-radius: 1vw;
+    padding: 1vw;
+    font-size: 1.2em;
+    margin-right: 1vw;
+    position: absolute;
+    bottom: 1vh;
+    right: 0;
+    margin-bottom: 1%;
+}
+
+.meer:hover{
+    cursor: pointer;
+}
+
+
+.detailpaginascherm{
+    position: fixed;
+    top: 2%;
+    left: 4%;
+}
+
+.detailpagina{
+    z-index: 1;
+    border: 0;
+    border-radius: 1vw;
+    padding: 1vw;
+    width: 90vw;
+    height: 92vh;
+    background: #ffffff;
+    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+}
+
+#show{
+    display: block;
+}
+
+#hide{
+    display: none;
+}
+
+.banner-uitje{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
+.content-vak{
+    width: 50%;
+    margin-left: 5vh;
+}
+
+.content-img {
+    height: 20vh;
+    width: 20%;
+    object-fit: cover;
+}
+
+h2{
+    font-size: 2vw;
+}
+
+.content-holder{
+    border-radius: 1vw;
+    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+    display: flex;
+}
+
+.textcontainer{
+    display: flex;
+}
+
+.criteriacontainer{
+    flex-shrink: 0;
+    padding-right: 10%;
+}
+
+
+
