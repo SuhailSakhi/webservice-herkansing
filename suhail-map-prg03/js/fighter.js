@@ -18,7 +18,7 @@ function init() {
             }
             return response.json();
         })
-        .then(parkenSuccesHandler)
+        .then(fighterSuccesHandler)
         .catch(ajaxErrorHandler);
 
     createdetailpagina();
@@ -47,7 +47,8 @@ function showSavedFighters() {
 }
 
 
-function parkenSuccesHandler(data) {
+
+function fighterSuccesHandler(data) {
     for (let fighter of data) {
         const newfighterdiv = document.createElement('section');
         newfighterdiv.classList.add("content-holder");
