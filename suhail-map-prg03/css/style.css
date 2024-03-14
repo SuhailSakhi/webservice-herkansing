@@ -2,16 +2,20 @@
     padding-bottom: 5vw;
 }
 
+.banner-fighter{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
 .lees{
-    background:  #ff0000;
+    background:  cornflowerblue;
     color:  #ffffff;
     border:  0;
     border-radius:  5px;
     padding:  1vw;
-    font-size: 20pt;
     margin-right: 1vw;
-    position: absolute;
-    bottom: 1vh;
     right: 0;
 }
 
@@ -21,33 +25,35 @@
 
 .save{
     text-indent:  -9999px;
-    margin-right: 1vw;
-    position: absolute;
     top: 0;
     right: 0;
     border: 0px;
     height: 8vh;
     width: 4vw;
+    bottom: 1vh;
 }
 
 .saved{
-    background:  url("../img/bookmark-full.png") no-repeat;
+    background:  url("../img/bookmark-full2.png") no-repeat;
     background-size:  contain;
+    size: 200px;
 }
 
 .notsaved{
-    background:  url("../img/bookmark-empty.png") no-repeat;
+    background:  url("../img/bookmark-empty2.png") no-repeat;
     background-size:  contain;
+    bottom: 1vh;
+
 }
 
 .saved:hover{
-    background:  url("../img/bookmark-empty.png") no-repeat;
+    background:  url("../img/bookmark-empty2.png") no-repeat;
     background-size:  contain;
     cursor:  pointer;
 }
 
 .notsaved:hover{
-    background:  url("../img/bookmark-full.png") no-repeat;
+    background:  url("../img/bookmark-full2.png") no-repeat;
     background-size:  contain;
     cursor:  pointer;
 }
@@ -60,14 +66,11 @@
 
 .detailpage{
     z-index: 1;
-    background: #ff0000;
     border: 0;
     border-radius: 5px;
     padding: 1vw;
-    width: 96vw;
-    height: 90vh;
-    background: #ffffff;
-    box-shadow: 2px 2px 5px gray;
+    background: white;
+    color: cornflowerblue;
 }
 
 #show{
@@ -82,10 +85,11 @@
     overflow: hidden;
 }
 
-.banner-museum{
+.banner{
     width: 100%;
-    max-height: 25%;
+    height: 50vh;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .content-vak{
@@ -94,7 +98,7 @@
 }
 
 h2{
-    font-size: 2vw;
+    color: black;
 }
 
 .content-holder{
@@ -109,7 +113,178 @@ h2{
     display: flex;
 }
 
-.topattractiescontainer{
-    flex-shrink: 0;
-    padding-right: 10%;
+.content-img{
+    height: 20vh;
+    width: 20%;
+    object-fit: cover;
+}
+body {
+    background-size: cover;
+    background-color: cornflowerblue;
+    background-blend-mode: overlay;
+    margin: 0;
+    font-family: "monospace", sans-serif;
+    box-sizing: border-box;
+    font-size:4em;
+}
+
+nav {
+    padding: 0.5vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: white;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.navbar-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    color: black;
+}
+
+
+.title.is-1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+.subtitle.is-3 {
+    font-size: 1 rem;
+    color: white;
+}
+
+
+
+.header {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(116, 160, 123);
+    font-weight: bold;
+    background-image: url("../suhail-map-prg03/img/octogan.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    text-align: center;
+    text-shadow: 4px 4px 20px #1d1d1d;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 3vh;
+}
+
+.content-box{
+    border-radius: 5px;
+    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.content-holder{
+    padding-bottom: 5vw;
+}
+
+
+.meer:hover{
+    cursor: pointer;
+}
+
+
+
+
+.detailpagina{
+    z-index: 1;
+    border: 0;
+    border-radius: 1vw;
+    padding: 1vw;
+    width: 90vw;
+    height: 92vh;
+    background: #ffffff;
+    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+}
+
+#show{
+    display: block;
+}
+
+#hide{
+    display: none;
+}
+
+.banner{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 1vw;
+}
+
+.content-vak{
+    width: 50%;
+    margin-left: 5vh;
+}
+
+.content-img {
+    height: 20vh;
+    width: 20%;
+    object-fit: cover;
+}
+
+
+.content-holder{
+    order-radius: 1vw;
+    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: relative;
+    background-color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+/* Voeg de volgende CSS-regels toe aan je bestaande CSS */
+
+
+
+.content-box {
+    width: 45%; /* Geef de "fighters" een breedte van 45% om ruimte te maken voor twee naast elkaar */
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .content-box {
+        width: 100%; /* Op kleinere schermen, neem de volledige breedte in beslag */
+    }
 }
