@@ -115,11 +115,11 @@ function detailSuccesHandler(fighterCard, fighter) {
 
 
     // create lees button
-    let leesmeerbutton = document.createElement("button");
-    leesmeerbutton.innerHTML = 'info  ' + fighter.name;
-    leesmeerbutton.classList.add("lees");
-    leesmeerbutton.dataset.id = fighter.id;
-    midcontent.appendChild(leesmeerbutton);
+    let readetailbutton = document.createElement("button");
+    readetailbutton.innerHTML = 'info  ' + fighter.name;
+    readetailbutton.classList.add("readetail");
+    readetailbutton.dataset.id = fighter.id;
+    midcontent.appendChild(readetailbutton);
 
     // create save button
     let savenbutton = document.createElement("button");
@@ -141,7 +141,7 @@ function loadSaves(fightername) {
         for (let i = 0; i < saveitems.length; i++) {
             if (saveitems[i] === "save " + fightername) {
                 let button = document.getElementById(fightername);
-                button.classList.add("saved");
+                button.classList.add("save");
                 button.classList.remove("notsaved");
                 button.innerHTML = button.innerHTML.replace("save", "unsave");
             }
@@ -178,7 +178,7 @@ function ItemWasClicked(e) {
     }
 
     // Toggle detail page visibility
-    if (targetClassList.contains("lees")) {
+    if (targetClassList.contains("readetail")) {
         detailpage.id = (detailpage.id === "hide") ? "show" : "hide";
         document.body.classList.toggle("noscroll");
         showdetail(e.target.dataset.id);
@@ -197,7 +197,7 @@ function showdetail(id) {
     // create button
     let closebutton = document.createElement("button");
     closebutton.innerHTML = 'close';
-    closebutton.classList.add("lees");
+    closebutton.classList.add("readetail");
     detailcontent.appendChild(closebutton);
 
     // create text container
